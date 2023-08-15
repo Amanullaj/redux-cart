@@ -68,7 +68,7 @@ const HomeScreen = () => {
 
     <Text style={styles.cart}>Cart</Text>
     
-      {cart.map((item,index) => (
+      {cart.map((item,index) => 
         <View style={{padding:10,margin:10,alignItems:'center',borderWidth:1}} key={index}>
            <Text style={{ fontWeight: "bold",color:'blue',fontSize:20 }}>{item.name}</Text>
             <Text style={styles.txt1}>Color :{item.color}</Text>
@@ -89,7 +89,7 @@ const HomeScreen = () => {
             </Pressable>
           </View>
         </View>
-      ))}
+      )}
       </ScrollView>
     </SafeAreaView>
   );
